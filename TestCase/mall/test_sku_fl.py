@@ -9,7 +9,6 @@ assertions = Assert.Assertions()
 head = {}
 fl_id = 0
 
-
 @allure.feature("商品分类模块")
 class Test_info:
 

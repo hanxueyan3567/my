@@ -18,7 +18,6 @@ for i in range(len(excel_list)):
 
     ids_list.append(ids_pop)
 
-
 @allure.feature('登录模块')    #'http://192.168.60.132:8080/admin/login'   "username": "admin", "password": "123456"
 class Test_login:
 

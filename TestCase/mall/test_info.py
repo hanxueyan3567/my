@@ -71,6 +71,7 @@ class Test_info:
         global fl_id
         fl_id = fl_dict['id']
 
+
     @allure.story("删除商品分类")
     def test_del(self):
         login_resp = request.post_request(url='http://192.168.60.132:8080/productCategory/delete/' + str(fl_id),

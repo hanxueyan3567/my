@@ -35,6 +35,7 @@ class Test_th:
         global th_id
         th_id = item['id']
 
+
     @allure.story('删除退货')
     def test_del(self):
         del_resp = request.post_request(url=url + 'returnReason/delete',params={'ids':th_id})

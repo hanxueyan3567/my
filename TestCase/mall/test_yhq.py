@@ -16,6 +16,7 @@ for i in range(len(excel_list)):
 head = Login.Login().get_token()
 yhq_id = 0
 
+
 @allure.feature('优惠券')
 class Test_yhy:
 

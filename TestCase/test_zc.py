@@ -14,12 +14,10 @@ for i in range(len(excel_list)):
 
     ids_list.append(ids_pop)
 
-
-
 @allure.feature('用户注册接口')
 class Test_zc:
 
-    @allure.story('手机') 
+    @allure.story('手机')
     def test_in(self):
         info_resp = request.post_request(url=url+'/user/signup',
                                         json={  "phone":Tools.phone_num(),"pwd": '123456aa', "rePwd":'123456aa',"userName":Tools.random_str_abc(6)+Tools.random_123(5) })
